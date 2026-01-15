@@ -3,7 +3,10 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Link from "next/link";
-
+import { MdShoppingBag } from "react-icons/md";
+import { HiEye } from "react-icons/hi";
+// import eye from '../../../public/Eye.gif';
+// import shop from '../../../public/Cart V5.svg'
 export default function CakeCard({
   image,
   name,
@@ -18,7 +21,7 @@ export default function CakeCard({
       animate={{ opacity: 1, y: 0 }}
       whileHover={{ y: -6 }}
       transition={{ duration: 0.4, ease: "easeOut" }}
-      className="relative bg-white rounded-3xl shadow-lg overflow-hidden group"
+      className="relative bg-white rounded-xl shadow-lg overflow-hidden group"
     >
       {/* Discount Badge */}
       <div className="absolute top-4 right-4 z-10 bg-pink-600 text-white text-sm font-semibold px-3 py-1 rounded-full">
@@ -53,15 +56,24 @@ export default function CakeCard({
         </div>
 
         {/* Buttons */}
-        <div className="mt-4 flex gap-3">
-          <button onClick={} className="btn btn-ghost flex-1 border border-pink-500 text-pink-600 rounded-full py-2 text-sm font-medium hover:bg-pink-50 transition">
-            Quick View
+        <div className="mt-2 flex items-start gap-3">
+          <button className="bg-[#EC4899] p-3 rounded-xl cursor-pinter  hover:border-[#EC4899] border hover:bg-white hover:text-[#EC4899] transition">
+            <HiEye  size={20}/>
           </button>
 
-          <button className="btn border-none flex-1 bg-pink-600 text-white rounded-full py-2 text-sm font-medium hover:bg-pink-700 transition">
-            Add to Cart
+          <button className="bg-[#EC4899] p-3 rounded-xl cursor-pinter border hover:border-[#EC4899] hover:bg-white hover:text-[#EC4899]">
+            <MdShoppingBag  size={20}/>
           </button>
         </div>
+        {/* <div className="mt-2 flex items-start gap-3">
+          <button className="bg-[#EC4899] p-3 rounded-xl cursor-pointer hover:border-[#EC4899] border hover:bg-white hover:text-[#EC4899] transition">
+            <Image src={eye} alt="View" width={20} height={20} />
+          </button>
+
+          <button className="bg-[#EC4899] p-3 rounded-xl cursor-pointer border hover:border-[#EC4899] hover:bg-white hover:text-[#EC4899] transition">
+            <Image src={shop} alt="Add to cart" width={20} height={20} />
+          </button>
+        </div> */}
       </div>
     </motion.div>
   );

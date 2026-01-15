@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex items-center bg-pink-50 overflow-hidden">
+    <section className="relative min-h-[80vh] flex items-center bg-pink-50 overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
@@ -32,6 +32,7 @@ export default function Hero() {
           <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
             Celebrate Every Moment <br />
             with <span className="text-pink-400">Sweet Cakes</span>
+            
           </h1>
 
           <p className="mt-6 text-gray-200 max-w-lg">
@@ -42,14 +43,15 @@ export default function Hero() {
           <div className="mt-8 flex gap-4">
             <Link
               href="/cakes"
-              className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-medium transition"
+             // className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded-full font-medium transition"
+              className="btn-custom btn-base"
             >
-              Explore Cakes 🍰
+              Explore Cakes
             </Link>
 
             <Link
               href="/contact"
-              className="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-pink-600 transition"
+              className="btn-base btn-lineOut"
             >
               Custom Order
             </Link>
@@ -74,7 +76,7 @@ export default function Hero() {
             />
 
             <p className="text-center mt-3 font-semibold text-pink-600">
-              Bestseller Cake 🎂
+              Bestseller Cake
             </p>
           </div>
         </motion.div>

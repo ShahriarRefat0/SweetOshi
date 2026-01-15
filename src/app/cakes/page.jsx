@@ -25,9 +25,11 @@ export default function CakesPage() {
   ];
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-12">
+    <section className="bg-white ">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+
       <h2 className="text-3xl font-bold mb-8 text-gray-800">
-        Our Popular Cakes 🎂
+        Our Popular Cakes
       </h2>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -35,6 +37,7 @@ export default function CakesPage() {
           <CakeCard key={cake.id} {...cake} />
         ))}
       </div>
+        </div>
     </section>
   );
 }
