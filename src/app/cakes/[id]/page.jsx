@@ -1,5 +1,6 @@
 import Image from "next/image";
-
+import { MdShoppingBag } from "react-icons/md";
+import { GoArrowLeft } from "react-icons/go";
 const cakes = [
   {
     id: 1,
@@ -59,8 +60,8 @@ export default async function CakeDetailsPage({ params }) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 py-12 px-4">
-      <div className="max-w-6xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden">
+    <div className="min-h-screen bg-pink-50 py-12 px-4">
+      <div className="max-w-6xl mx-auto bg-gray-50 rounded-3xl shadow-xl overflow-hidden">
         <div className="grid md:grid-cols-2 gap-8">
           {/* Image */}
           <div className="relative h-[400px]">
@@ -101,17 +102,20 @@ export default async function CakeDetailsPage({ params }) {
 
             {/* Buttons */}
             <div className="mt-10 flex gap-4">
-              <button className="flex-1 bg-pink-600 text-white py-4 rounded-full font-medium hover:bg-pink-700 transition">
-                Add to Cart 🛒
+              <button className="flex-1 flex items-center justify-center gap-2 bg-pink-600 text-white py-4 rounded-full font-medium hover:bg-pink-700 transition">
+                <MdShoppingBag size={20} />
+                <span>Add to Cart</span>
               </button>
 
               <a
                 href="/cakes"
-                className="flex-1 text-center border border-gray-300 py-4 rounded-full font-medium hover:bg-gray-100 transition"
+                className="flex-1 flex items-center justify-center gap-2 border text-black border-gray-300 py-4 rounded-full font-medium hover:bg-gray-100 transition"
               >
-                Back to Cakes
+                <GoArrowLeft size={22} />
+                <span>Back to Cakes</span>
               </a>
             </div>
+
           </div>
         </div>
       </div>

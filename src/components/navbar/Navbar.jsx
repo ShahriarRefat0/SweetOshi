@@ -28,12 +28,12 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="/about" className="hover:text-pink-600">
+            <Link href="/pages/about" className="hover:text-pink-600">
               About
             </Link>
           </li>
           <li>
-            <Link href="/contact" className="hover:text-pink-600">
+            <Link href="/pages/contact" className="hover:text-pink-600">
               Contact
             </Link>
           </li>
