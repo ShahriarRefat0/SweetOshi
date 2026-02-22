@@ -15,7 +15,7 @@ export default function Footer() {
           {/* 1. Brand & About */}
           <div className="space-y-6">
             <Link href="/" className="text-2xl font-bold text-pink-600">
-              Sweet<span className="text-gray-800">Oshi</span>
+              Nusrat<span className="text-gray-800">Foods</span>
             </Link>
             <p className="text-gray-600 leading-relaxed">
               Baking happiness since 2010. We specialize in custom cakes for your most special celebrations with fresh ingredients and love.
@@ -63,7 +63,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3 text-gray-600">
                 <Mail className="text-pink-600 flex-shrink-0" size={20} />
-                <span>hello@SweetOshi.com</span>
+                <span>hello@NusratFoods.com</span>
               </li>
             </ul>
           </div>
@@ -87,7 +87,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© {currentYear} SweetOshi. All rights reserved.</p>
+          <p>© {currentYear} NusratFoods. All rights reserved.</p>
           <div className="flex gap-8">
             <Link href="#" className="hover:text-pink-600">Privacy Policy</Link>
             <Link href="#" className="hover:text-pink-600">Terms of Service</Link>

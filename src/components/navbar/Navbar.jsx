@@ -5,6 +5,8 @@ import { useState } from "react";
 import { Menu, X, LogOut } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
+import Image from "next/image";
+import logo from "../../assests/NFS.png";
 import { useAuth } from "@/context/AuthContext";
 
 export default function Navbar() {
@@ -42,7 +44,7 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-pink-600">
-          SweetOshi
+          <Image src={logo} alt="logo" width={55} height={40} />
         </Link>
 
         {/* Desktop Menu */}

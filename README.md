@@ -1,4 +1,4 @@
-# 🍰 SweetOshi - Premium Online Bakery
+# 🍰 NusratFoods - Premium Online Bakery
 
 A modern, feature-rich e-commerce web application for ordering custom cakes, built with Next.js 15 and the latest web technologies.
 
@@ -9,7 +9,7 @@ A modern, feature-rich e-commerce web application for ordering custom cakes, bui
 
 ## 🌟 Live Demo
 
-- **Live Site:** [SweetOshi Demo](https://scic-task-a09.vercel.app)
+- **Live Site:** [NusratFoods Demo](https://scic-task-a09.vercel.app)
 - **GitHub Repository:** [https://github.com/ShahriarRefat0/SCIC-Task-A09.git](https://github.com/ShahriarRefat0/SCIC-Task-A09.git)
 
 ---
@@ -284,7 +284,7 @@ module.exports = nextConfig
 ### User Authentication
 
 #### Mock Login Credentials:
-- **Email:** `admin@SweetOshi.com`
+- **Email:** `admin@NusratFoods.com`
 - **Password:** `admin123`
 
 #### Login Process:
@@ -316,7 +316,7 @@ The application uses a simple cookie-based authentication system:
 
 ```javascript
 // Login logic
-if (email === 'admin@SweetOshi.com' && password === 'admin123') {
+if (email === 'admin@NusratFoods.com' && password === 'admin123') {
   // Set cookie
   document.cookie = 'auth=true; path=/';
   router.push('/items');

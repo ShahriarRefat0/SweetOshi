@@ -31,7 +31,7 @@ export default function Hero() {
 
           <h1 className="text-4xl md:text-6xl font-extrabold text-white leading-tight">
             Celebrate Every Moment <br />
-            with <span className="text-pink-400">Sweet Cakes</span>
+            with <span className="text-pink-400">NusratFoods</span>
             
           </h1>
 

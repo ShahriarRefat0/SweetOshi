@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "SweetOshi",
+  title: "NusratFoods",
   description: "Handmade Cakes for Every Celebration",
 };
 
