@@ -51,6 +51,7 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-6 font-medium text-gray-700">
           <li><Link href="/" className="hover:text-pink-600">Home</Link></li>
           <li><Link href="/cakes" className="hover:text-pink-600">Cakes</Link></li>
+          <li><Link href="/pages/nusratCourse" className="hover:text-pink-600">Courses</Link></li>
           <li><Link href="/pages/about" className="hover:text-pink-600">About</Link></li>
           <li><Link href="/pages/contact" className="hover:text-pink-600">Contact</Link></li>
 
